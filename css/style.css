@@ -48,6 +48,34 @@ h6 {
   visibility: hidden;
 }
 
+/* LIGHT EFFECT */
+
+.light_effect {
+  position: relative;
+  color: #f8234a;
+  -webkit-box-reflect: below 5px linear-gradient(transparent, #0004);
+  line-height: 0.75em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+/* @keyframes animate {
+
+  20% {
+    color: #f8234a;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #f8234a,
+      0 0 20px #f8234a,
+      0 0 30px #f8234a,
+      0 0 40px #f8234a,
+      0 0 50px #f8234a;
+
+  }
+} */
 /* Prelaoder */
 
 #preloader {
@@ -93,6 +121,11 @@ h6 {
   color: #fff;
 }
 
+.top-arw {
+  padding: 5px !important;
+  margin: 0px !important;
+  width: 100% !important;
+}
 /* Sections Header
 --------------------------------*/
 
@@ -702,6 +735,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  height: 30vh;
 }
 
 #speakers .speaker .details {
@@ -981,10 +1015,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #faq {
   padding: 60px 0;
 }
-#{
-  
-}
-
 #faq #faq-list {
   padding: 0;
   list-style: none;
@@ -1027,7 +1057,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
 }
-
 
 /*--------------------------------------------------------------
 # Contact Section
